@@ -104,9 +104,6 @@ export default function App() {
     if (solana) {
       try {
 				// ADD DISCONNECT LOGIC HERE
-        await solana.disconnect();
-        console.log('wallet disconnected')
-        setWalletKey(undefined);
       } catch (err) {
           console.log(err);
       }
